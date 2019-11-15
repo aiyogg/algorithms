@@ -1,13 +1,15 @@
 package main
 
+import "fmt"
+
 /**
 反转字符串中的元音字符
 Given s = "leetcode", return "leotcede".
 */
-type chars []byte
+type vowel []byte
 
-func (vowels chars) contains(c byte) bool {
-	for _, char := range vowels {
+func (v vowel) contains(c byte) bool {
+	for _, char := range v {
 		if c == char {
 			return true
 		}
@@ -15,19 +17,30 @@ func (vowels chars) contains(c byte) bool {
 	return false
 }
 
-var vowels = chars{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+var vowels = vowel{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
 
 func reverseVowels(s string) string {
-	j := len(s)
-	result := make([]byte, j)
-	for i := 0; i < j; {
+	j := len(s) - 1
+	result := make([]byte, int(len(s)))
+	for i := 0; i <= j; {
 		ci := s[i]
 		cj := s[j]
 		if !vowels.contains(ci) {
-			_ = append(result, ci)
+			result[i] = ci
 			i++
 		} else if !vowels.contains(cj) {
-			//_ = append(re)
+			result[j] = cj
+			j--
+		} else {
+			result[i] = cj
+			result[j] = ci
+			i++
+			j--
 		}
 	}
+	return string(result)
+}
+
+func main() {
+	fmt.Printf("reverseVowels: %v", reverseVowels("Leetcode"))
 }
