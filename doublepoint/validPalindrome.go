@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
 给定一个非空字符串 s，最多删除一个字符。判断是否能成为回文字符串。
 输入: "abca"
@@ -54,7 +52,7 @@ func helper(bs []byte, lo, hi int, hasDelete bool) bool {
 	return true
 }
 
-func main() {
-	fmt.Printf("validPalindrome: %v \n", validPalindrome("abxcdcba"))
-	fmt.Printf("validPalindromeRecursive: %v", validPalindromeRecursive("abxcdcba"))
-}
+//func main() {
+//	fmt.Printf("validPalindrome: %v \n", validPalindrome("abxcdcba"))
+//	fmt.Printf("validPalindromeRecursive: %v", validPalindromeRecursive("abxcdcba"))
+//}

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -25,6 +24,6 @@ func judgeSquareSum(target int) bool {
 	return false
 }
 
-func main() {
-	fmt.Printf("judgeSquareSum: %v", judgeSquareSum(8))
-}
+//func main() {
+//	fmt.Printf("judgeSquareSum: %v", judgeSquareSum(8))
+//}

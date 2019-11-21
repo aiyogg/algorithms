@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
 反转字符串中的元音字符
 Given s = "leetcode", return "leotcede".
@@ -41,6 +39,6 @@ func reverseVowels(s string) string {
 	return string(result)
 }
 
-func main() {
-	fmt.Printf("reverseVowels: %v", reverseVowels("Leetcode"))
-}
+//func main() {
+////	fmt.Printf("reverseVowels: %v", reverseVowels("Leetcode"))
+////}

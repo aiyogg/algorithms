@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 有序数组的两数之和
 Input: numbers = [2,7,11,15], target = 9
@@ -23,6 +21,6 @@ func twoSum(numbers []int, target int) []int {
 	return []int{}
 }
 
-func main() {
-	fmt.Printf("towSum: %v", twoSum([]int{2, 7, 11, 15}, 18))
-}
+//func main() {
+//	fmt.Printf("towSum: %v", twoSum([]int{2, 7, 11, 15}, 18))
+//}
