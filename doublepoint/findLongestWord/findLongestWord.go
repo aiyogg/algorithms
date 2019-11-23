@@ -3,7 +3,7 @@ package findlongestword
 import "strings"
 
 /**
-Longest Word in Dictionary through Deleting
+524.Longest Word in Dictionary through Deleting
 Input:
 s = "abpcplea", d = ["ale","apple","monkey","plea"]
 

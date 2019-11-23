@@ -1,7 +1,7 @@
-package main
+package reverseVowels
 
 /**
-反转字符串中的元音字符
+345.反转字符串中的元音字符
 Given s = "leetcode", return "leotcede".
 */
 type vowel []byte
