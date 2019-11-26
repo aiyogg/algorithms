@@ -40,3 +40,12 @@ func TestFindKthLargest(t *testing.T) {
 		ast.Equal(tc.ans, findKthLargest(tc.nums, tc.k), "Input: %v", tc)
 	}
 }
+
+func TestFindKthLargest2(t *testing.T) {
+	ast := assert.New(t)
+
+	for _, tc := range tcs {
+		fmt.Printf("test case: %v \n", tc)
+		ast.Equal(tc.ans, findKthLargest2(tc.nums, tc.k), "Input: %v", tc)
+	}
+}
