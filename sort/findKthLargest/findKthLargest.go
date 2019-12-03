@@ -66,10 +66,13 @@ func kthLargest(nums []int, left, right, k int) int {
 	return kthLargest(nums, left, pivot-1, k)
 }
 
+/**
+分区，将 slice 分为 分别是小于基准和大于等于基准的两部分
+ */
 func partition(nums []int, left, right int) int {
 	pivot := left
 	for i := left; i < right; i++ {
-		if nums[i] > nums[right] {
+ 		if nums[i] > nums[right] {
 			nums[i], nums[pivot] = nums[pivot], nums[i]
 			pivot++
 		}
