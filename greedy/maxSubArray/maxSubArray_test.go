@@ -25,3 +25,10 @@ func TestMaxSubArray(t *testing.T) {
 		ast.Equal(tc.ans, maxSubArray(tc.nums))
 	}
 }
+
+func TestMaxSubArray2(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tcs {
+		ast.Equal(tc.ans, maxSubArray2(tc.nums))
+	}
+}
