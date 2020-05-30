@@ -24,3 +24,5 @@
     - [x] 665. Non-decreasing Array (Easy)修改一个数成为非递减数组
     - [x] 53. Maximum Subarray (Easy)子数组最大的和
     - [x] 763. Partition Labels (Medium)分隔字符串使同种字符出现在一起
+- 二分查找
+    - [x] 69. Sqrt(x) (Easy)求开方
