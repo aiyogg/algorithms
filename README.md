@@ -26,3 +26,5 @@
     - [x] 763. Partition Labels (Medium)分隔字符串使同种字符出现在一起
 - 二分查找
     - [x] 69. Sqrt(x) (Easy)求开方
+    - [x] 744. Find Smallest Letter Greater Than Target (Easy)大于给定元素的最小元素
+    - [x] 540. Single Element in a Sorted Array (Medium)有序数组的 Single Element
