@@ -29,3 +29,4 @@
     - [x] 744. Find Smallest Letter Greater Than Target (Easy)大于给定元素的最小元素
     - [x] 540. Single Element in a Sorted Array (Medium)有序数组的 Single Element
     - [x] 278. First Bad Version (Easy)第一个错误的版本
+    - [x] 153. Find Minimum in Rotated Sorted Array (Medium)旋转数组的最小数字
