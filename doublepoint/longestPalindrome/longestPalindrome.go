@@ -12,7 +12,7 @@
 
 package longestpalindrome
 
-// 1.暴力解法
+// 1.暴力解法 时间复杂度 O(n^3)，空间复杂度 O(1)
 // 穷举所有的子串，记录最长的子串和对应的起始位置
 func longestPalindrome1(s string) string {
 	length := len(s)
@@ -41,4 +41,34 @@ func validPalindromic(s string, left, right int) bool {
 		right--
 	}
 	return true
+}
+
+// 2.中心扩展法 时间复杂度 O(n^2)，空间复杂度 O(1)
+// 利用回文串中心点对称的特性，分成奇数/偶数位分别扩散
+func longestPalindrome2(s string) string {
+	length := len(s)
+	if length < 2 {
+		return s
+	}
+	start, end := 0, 0
+	for i := 0; i < length; i++ {
+		left1, right1 := expendAroundCenter(s, i, i)
+		left2, right2 := expendAroundCenter(s, i, i+1)
+		if right1-left1 > end-start {
+			start, end = left1, right1
+		}
+		if right2-left2 > end-start {
+			start, end = left2, right2
+		}
+	}
+	return s[start : end+1]
+}
+
+// 以中心向两端扩展
+func expendAroundCenter(s string, left, right int) (int, int) {
+	for left >= 0 && right < len(s) && s[left] == s[right] {
+		left--
+		right++
+	}
+	return left + 1, right - 1
 }

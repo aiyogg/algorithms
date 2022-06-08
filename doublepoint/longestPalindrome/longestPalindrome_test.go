@@ -21,3 +21,10 @@ func TestLongestPalindrome1(t *testing.T) {
 		ast.Equal(tc.output, longestPalindrome1(tc.s), "input:%v", tc)
 	}
 }
+
+func TestLongestPalindrome2(t *testing.T) {
+	ast := assert.New(t)
+	for _, tc := range tsc {
+		ast.Equal(tc.output, longestPalindrome2(tc.s), "input:%v", tc)
+	}
+}
